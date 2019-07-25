@@ -6,8 +6,8 @@ public class TesteConta {
 		
 		Conta C1 = new Conta();
 		Conta C2 = new Conta();
-		Agencia A1 = new Agencia();
-		Agencia A2 = new Agencia();
+		Agencia A1 = new Agencia(2);
+		Agencia A2 = new Agencia(3);
 		
 		A1.IDAgencia = 73;
 		A2.IDAgencia = 84;
@@ -24,6 +24,21 @@ public class TesteConta {
 		
 		System.out.println(C1.IDConta + " / " + C1.Saldo + " / " + C1.Limite + " / " + C1.agencia.IDAgencia);
 		System.out.println(C2.IDConta + " / " + C2.Saldo + " / " + C2.Limite + " / " + C2.agencia.IDAgencia);
+		
+		C1.Deposito(209.99);
+		C2.Deposito(1555.90);
+		
+		System.out.println(C1.getSaldo());
+		System.out.println(C2.getSaldo());
+		
+		C1.Saque(508.45);
+		C2.Saque(233.67);
+		
+		System.out.println(C1.getSaldo());
+		System.out.println(C2.getSaldo());
+				
+		System.out.println(C1.GetExtrato());
+		System.out.println(C1.GetExtrato());
 	}
 
 }

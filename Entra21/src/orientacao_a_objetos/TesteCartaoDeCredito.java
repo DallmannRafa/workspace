@@ -4,8 +4,8 @@ public class TesteCartaoDeCredito {
 
 	public static void main(String[] args) {
 		
-		CartaoDeCredito Ca1 = new CartaoDeCredito();
-		CartaoDeCredito Ca2 = new CartaoDeCredito();
+		CartaoDeCredito Ca1 = new CartaoDeCredito(5);
+		CartaoDeCredito Ca2 = new CartaoDeCredito(4);
 		Cliente Cl1 = new Cliente();
 		Cliente Cl2 = new Cliente();
 		

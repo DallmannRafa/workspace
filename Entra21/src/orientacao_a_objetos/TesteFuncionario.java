@@ -16,6 +16,11 @@ public class TesteFuncionario {
 		System.out.println(F1.NomeFuncionario + " / " + F1.Salario);
 		System.out.println(F2.NomeFuncionario + " / " + F2.Salario);
 		
+		F1.AumentaSalario(255.99);
+		F2.AumentaSalario(1009.90);
+		
+		System.out.println(F1.GetDadosFuncionario());
+		System.out.println(F2.GetDadosFuncionario());
 	}
 
 }
