@@ -4,8 +4,8 @@ public class TesteAgencia {
 
 	public static void main(String[] args) {
 		
-		Agencia A1 = new Agencia();
-		Agencia A2 = new Agencia();
+		Agencia A1 = new Agencia(4);
+		Agencia A2 = new Agencia(3);
 		
 		A1.IDAgencia = 25;
 		A2.IDAgencia = 75;

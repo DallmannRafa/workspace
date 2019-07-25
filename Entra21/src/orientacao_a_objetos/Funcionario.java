@@ -3,7 +3,7 @@ package orientacao_a_objetos;
 public class Funcionario {
 	
 	String NomeFuncionario;
-	double Salario;
+	double Salario = 1000;
 
 	public void AumentaSalario (double acrescimo) {
 		this.Salario += acrescimo;

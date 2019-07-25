@@ -6,6 +6,10 @@ public class Conta {
 	Agencia agencia;
 	String extrato = "";
 	
+	Conta (Agencia agencia) {
+		this.agencia = agencia;
+	}
+	
 	public void Deposito (double valor) {
 		this.Saldo += valor;
 		this.extrato += "deposito + R$" + valor + "\n";
@@ -17,13 +21,16 @@ public class Conta {
 	}
 	
 	public String GetExtrato () {
-		return this.extrato;
+		return this.extrato + "Saldo: R$" + this.Saldo;
 	}
 
 	public double getSaldo() {
 		return this.Saldo;
 	}
 
-	
+	public void Transferencia (Conta ContaDestino, int Valor) {
+		this.Saldo -= Valor;
+		ContaDestino.Saldo += Valor;
+	}
 			
 }
