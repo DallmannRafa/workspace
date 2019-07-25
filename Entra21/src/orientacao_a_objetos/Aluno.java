@@ -4,5 +4,5 @@ public class Aluno {
 	
 	String NomeAluno, DTNascAluno;
 	int RGAluno;
-
+	Turma turma;
 }
