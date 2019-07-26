@@ -10,4 +10,10 @@ public class Telefonista extends Funcionario{
 	public void setCodEstacaoTrabalho(String codEstacaoTrabalho) {
 		CodEstacaoTrabalho = codEstacaoTrabalho;
 	}
+	
+	public String DadosFuncionario () {
+		String Dados;
+		Dados = super.DadosFuncionario() + ", Código de estação de trabalho: " + this.CodEstacaoTrabalho;
+		return Dados;
+	}
 }

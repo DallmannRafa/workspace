@@ -19,4 +19,16 @@ public class Gerente extends Funcionario{
 		Senha = senha;
 	}
 	
+	public double BonificacaoSalario () {
+		double Bonificacao;
+		Bonificacao = this.getSalario() * 0.2;
+		this.setSalario(Bonificacao + this.getSalario());
+		return Bonificacao;
+	}
+	
+	public String DadosFuncionario () {
+		String Dados;
+		Dados = super.DadosFuncionario() + ", Usuário: " + this.NomeUsuario + ", Senha: " + this.Senha;
+		return Dados;
+	}
 }
