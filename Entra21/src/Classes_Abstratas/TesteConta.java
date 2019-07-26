@@ -1,0 +1,10 @@
+package Classes_Abstratas;
+
+public class TesteConta {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
