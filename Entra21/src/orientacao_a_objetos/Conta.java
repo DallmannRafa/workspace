@@ -1,15 +1,51 @@
 package orientacao_a_objetos;
 
 public class Conta {
-	int IDConta;
-	double Saldo, Limite = 100.00;
-	Agencia agencia;
-	String extrato = "";
+	private int IDConta;
+	private double Saldo, Limite = 100.00;
+	private Agencia agencia;
+	private String extrato = "";
 	
 	Conta (Agencia agencia) {
 		this.agencia = agencia;
 	}
 	
+	public int getIDConta() {
+		return IDConta;
+	}
+
+	public void setIDConta(int iDConta) {
+		IDConta = iDConta;
+	}
+
+	public double getLimite() {
+		return Limite;
+	}
+
+	public void setLimite(double limite) {
+		Limite = limite;
+	}
+
+	public Agencia getAgencia() {
+		return agencia;
+	}
+
+	public void setAgencia(Agencia agencia) {
+		this.agencia = agencia;
+	}
+
+	public String getExtrato() {
+		return extrato;
+	}
+
+	public void setExtrato(String extrato) {
+		this.extrato = extrato;
+	}
+
+	public void setSaldo(double saldo) {
+		Saldo = saldo;
+	}
+
 	public void Deposito (double valor) {
 		this.Saldo += valor;
 		this.extrato += "deposito + R$" + valor + "\n";

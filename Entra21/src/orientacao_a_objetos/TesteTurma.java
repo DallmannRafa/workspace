@@ -7,18 +7,18 @@ public class TesteTurma {
 		Turma T1 = new Turma();
 		Turma T2 = new Turma();
 		
-		T1.Periodo = "Matutino";
-		T1.Serie = 6;
-		T1.Sigla = "OP";
-		T1.TipoEnsino = "Fundamental";
+		T1.setPeriodo("Matutino");
+		T1.setSerie(6);
+		T1.setSigla("OP");
+		T1.setTipoEnsino("Fundamental");
 		
-		T2.Periodo = "Noturno";
-		T2.Serie = 3;
-		T2.Sigla = "OF";
-		T2.TipoEnsino = "Médio";
+		T2.setPeriodo("Noturno");
+		T2.setSerie(3);
+		T2.setSigla("OF");
+		T2.setTipoEnsino("Médio");
 		
-		System.out.println(T1.Sigla + " / " + T1.Periodo + " / " + T1.TipoEnsino + " / " + T1.Serie);
-		System.out.println(T2.Sigla + " / " + T2.Periodo + " / " + T2.TipoEnsino + " / " + T2.Serie);
+		System.out.println(T1.getSigla() + " / " + T1.getPeriodo() + " / " + T1.getTipoEnsino() + " / " + T1.getSerie());
+		System.out.println(T2.getSigla() + " / " + T2.getPeriodo() + " / " + T2.getTipoEnsino() + " / " + T2.getSerie());
 
 	}
 

@@ -7,14 +7,14 @@ public class TesteFuncionario {
 		Funcionario F1 = new Funcionario();
 		Funcionario F2 = new Funcionario();
 		
-		F1.NomeFuncionario = "José";
-		F1.Salario = 2399.99;
+		F1.setNomeFuncionario("José");
+		F1.setSalario(2399.99);
 		
-		F2.NomeFuncionario = "Ailton";
-		F2.Salario = 1459.90;
+		F2.setNomeFuncionario("Ailton");
+		F2.setSalario(1459.90);
 		
-		System.out.println(F1.NomeFuncionario + " / " + F1.Salario);
-		System.out.println(F2.NomeFuncionario + " / " + F2.Salario);
+		System.out.println(F1.getNomeFuncionario() + " / " + F1.getSalario());
+		System.out.println(F2.getNomeFuncionario() + " / " + F2.getSalario());
 		
 		F1.AumentaSalario(255.99);
 		F2.AumentaSalario(1009.90);

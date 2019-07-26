@@ -1,8 +1,16 @@
 package orientacao_a_objetos;
 
 public class Gerente {
-	double Salario;
+	private double Salario;
 	
+	public double getSalario() {
+		return Salario;
+	}
+
+	public void setSalario(double salario) {
+		Salario = salario;
+	}
+
 	public void AumentaSalario () {
 		this.Salario += this.Salario * 0.1;
 	}
